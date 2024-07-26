@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .heroImage {
+            width: 100vw;
+            height: 100vh;
+            background: url(/img/Lago-Moraine-Parque-Nacional-Banff-Alberta-Canada.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+        }
+        .opacity {
+            position: relative;
+            top:0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+
+        }
+        .content {
+            width: 70vw;
+            height: inherit;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .content h1 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="heroImage">
+        <div class="opacity">
+            <div class="content">
+                <h1>Bienvenidos</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita praesentium hic aliquid inventore voluptatem explicabo libero, beatae suscipit dignissimos rerum! Ipsa tempore error voluptatem nostrum ut placeat quos quidem perspiciatis.</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
