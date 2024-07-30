@@ -12,14 +12,12 @@
         text-decoration: none;
       }
       body {
-        width: 100vw;
-        height: 100vh;
         background-color: red;
       }
       .navbar {
         width: 100vw;
-        height: 7vw;
-        background-color: transparent;
+        height: 7vh;
+
         display: flex;
       }
       .logo {
@@ -43,22 +41,58 @@
       }
       main {
         width: 85vw;
-        height: 92vh;
-        margin: 50px auto;
+        height: 93vh;
+        margin: auto;
         display: flex;
+
       }
       .content {
         width: 50%;
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
+      .content h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        color: white;
+      }
+      .content h1 span {
+        font-weight:900;
+      }
+      .content p {
+        font-size: 1.2rem;
+        color: white;
+        margin-bottom: 1rem;
+      }
+      .content button {
+        width: 130px;
+        font-size: 1rem;
+        color: gray;
+        padding: .7rem .6rem;
+        border-radius: 1.2rem;
+        border: thin solid gray;
+        cursor: pointer;
+      }
+
       .image {
         width: 50%;
+        height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      img {
+
       }
     </style>
     <title>KFC</title>
   </head>
 
   <body>
-    <div>
+    <div class="container">
       <nav class="navbar">
         <section class="logo">logo</section>
         <section class="links">
@@ -69,8 +103,15 @@
         </section>
       </nav>
       <main>
-        <section class="content">contenido</section>
-        <section class="image">imagen</section>
+        <section class="content">
+          <h1>Its Fringer<br>Lickin <span>Good</span></h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias itaque iste illo in nostrum vero ipsam! Reiciendis voluptates quos maxime rerum a itaque rem voluptatem enim ipsam vitae, ullam beatae.</p>
+          <button>Order Now</button>
+
+        </section>
+        <section class="image">
+          <img src="./img/practica2-removebg-preview.png" alt="imagen">
+        </section>
       </main>
     </div>
   </body>
